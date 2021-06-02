@@ -1,11 +1,10 @@
 # Bike-Rental-Beta-1.9
-The second major update to the previous Bike Rental project
-Updates:
+The second major update to the previous Bike Rental project, changes include:
 * Complete UI redesign.
 * Login Screen(Google Firebase used)
 * Bug fixes
 * Added menu screens.
-* Also includes language change options
+* Now includes support for 3 additional languages.
 
 If you just want the .apk the hit this link > 
 
