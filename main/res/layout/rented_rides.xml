@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/parent"
+            android:layout_height="150dp"
+            android:layout_weight="3"
+            android:background="@drawable/login_shape_bk"
+            android:orientation="vertical">
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/back1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:text="X"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="4dp"
+                app:spinning_bar_width="4dp" />
+
+            <ImageView
+                style="@style/parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_login_bk"
+                android:contentDescription="login background" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:background="@drawable/login_shape_bk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_login_bk">
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/regback"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:text="X"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:initialCornerAngle="27dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="4dp"
+                app:spinning_bar_width="4dp" />
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/headerText"
+                android:layout_width="282dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="44dp"
+                android:text="@string/register_your_vehicle"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="589dp"
+        android:layout_marginTop="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signuptextmargintop">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/name11"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signuptextmargintop">
+
+                <EditText
+                    android:id="@+id/vehino"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/vehicle_number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signuptextmargintop">
+
+                <EditText
+                    android:id="@+id/rcno"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/rc_number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signuptextmargintop">
+
+                <EditText
+                    android:id="@+id/dlno"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/dl_number"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/signuptextmargintop">
+
+                <EditText
+                    android:id="@+id/address"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/current_address"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+                android:id="@+id/registerveh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:background="@drawable/login_button_bk"
+                android:text="@string/reg"
+                android:textColor="@color/whiteTextColor"
+                android:textStyle="bold"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
