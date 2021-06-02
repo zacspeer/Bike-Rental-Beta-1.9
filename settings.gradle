@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Bike Rental Beta 1_8"
