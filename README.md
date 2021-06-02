@@ -6,7 +6,7 @@ The second major update to the previous Bike Rental project, changes include:
 * Added menu screens.
 * Now includes support for 3 additional languages.
 
-If you just want the .apk the hit this link > 
+If you just want the .apk the hit this link > https://bit.ly/2Ts3xMS
 
 Else read on,
 
