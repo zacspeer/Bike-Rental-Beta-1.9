@@ -10,7 +10,11 @@ If you just want the .apk the hit this link > https://bit.ly/2Ts3xMS
 
 Else read on,
 
-To add the Project, Just download and open your IDE and import the "build.gradle" file
+To add the Project, Just download and open your IDE and import the "build.gradle" file 
+or 
+Copy the contents of main to your project's main folder,add the dependencies in "build.gradle to your
+project build, copy the contents of the AndroidManifest.xml to your project's Manifest and finally 
+sync the Project files with Gradle Build
 
 # NOTE:
 * Replace the Google maps API key with your own in res > values > google_maps_api.xml
